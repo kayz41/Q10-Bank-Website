@@ -1,0 +1,300 @@
+/* Stanbic Bank Uganda loan portal stylesheet
+   Brand colours: dark blue #002D62 and gold #C9A63A.
+   All page layout and form styling are kept in this external file. */
+
+:root {
+    --bank-blue: #002D62;
+    --bank-gold: #C9A63A;
+    --light-bg: #F4F6F9;
+    --text: #252B33;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--light-bg);
+}
+
+.site-header {
+    background: var(--bank-blue);
+    color: var(--white);
+    padding: 18px 6%;
+}
+
+.site-header h1 {
+    margin: 0 0 12px;
+    font-size: 1.8rem;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.main-nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    color: var(--bank-gold);
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: var(--bank-blue);
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.72;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-overlay h2 {
+    margin: 0;
+    color: var(--white);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.content-section {
+    width: min(1100px, 90%);
+    margin: 42px auto;
+}
+
+.content-section > h2 {
+    color: var(--bank-blue);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.loan-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+}
+
+.loan-card {
+    flex: 1 1 260px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    background: var(--white);
+    border-top: 5px solid var(--bank-gold);
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.09);
+}
+
+.loan-card h3 {
+    margin-top: 0;
+    color: var(--bank-blue);
+}
+
+.interest-rate {
+    color: var(--bank-blue);
+    font-weight: bold;
+}
+
+.apply-button,
+.submit-button {
+    display: inline-block;
+    margin-top: auto;
+    padding: 11px 20px;
+    border: 0;
+    border-radius: 5px;
+    background: var(--bank-blue);
+    color: var(--bank-gold);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.apply-button:hover,
+.submit-button:hover {
+    background: #014080;
+}
+
+.sample-note {
+    margin-top: 20px;
+    padding: 12px;
+    background: #FFF8E5;
+    border-left: 4px solid var(--bank-gold);
+    font-size: 0.92rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid #C9D1DC;
+    padding: 14px;
+    text-align: center;
+}
+
+.comparison-table thead th {
+    background: var(--bank-blue);
+    color: var(--white);
+}
+
+.comparison-table tbody th {
+    text-align: left;
+    color: var(--bank-blue);
+    background: #E9EEF5;
+}
+
+.site-footer {
+    margin-top: 48px;
+    padding: 18px;
+    background: var(--bank-blue);
+    color: var(--white);
+    text-align: center;
+}
+
+/* Personal loan application page */
+.form-page {
+    width: min(900px, 92%);
+    margin: 38px auto;
+}
+
+.application-form {
+    padding: 24px;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+}
+
+.application-form fieldset {
+    min-width: 0;
+    padding: 24px;
+    border: 2px solid var(--bank-blue);
+    border-radius: 7px;
+}
+
+.application-form legend {
+    padding: 0 10px;
+    color: var(--bank-blue);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    color: var(--bank-blue);
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    min-height: 42px;
+    padding: 9px 10px;
+    border: 1px solid #AAB4C2;
+    border-radius: 4px;
+    background: var(--white);
+    font: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: 2px solid var(--bank-gold);
+    border-color: var(--bank-blue);
+}
+
+.eligibility-message {
+    margin: 2px 0 20px;
+    border-radius: 4px;
+}
+
+.declaration {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.declaration input {
+    width: 18px;
+    min-height: 18px;
+}
+
+.declaration label {
+    font-weight: normal;
+}
+
+.submit-button {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 8px;
+    font-size: 1rem;
+}
+
+@media (max-width: 650px) {
+    .site-header {
+        padding: 16px 5%;
+    }
+
+    .main-nav {
+        gap: 14px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .application-form {
+        padding: 12px;
+    }
+
+    .application-form fieldset {
+        padding: 16px;
+    }
+}
