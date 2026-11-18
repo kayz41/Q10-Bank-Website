@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanbic Bank Uganda | Loan Products</title>
+    <link rel="stylesheet" href="dlac.css">
+</head>
+<body>
+    <!-- Main bank header and navigation -->
+    <header class="site-header">
+        <h1>Stanbic Bank Uganda</h1>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Loan Products</a>
+            <a href="personal-loan.html">Personal Loan Application</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero image height is the only inline layout style on this page -->
+        <section class="hero">
+            <img src="hero-bank.jpg" alt="Stanbic Bank building" style="height:350px">
+            <div class="hero-overlay">
+                <h2>Apply for Your Loan Online</h2>
+            </div>
+        </section>
+
+        <!-- Three loan product cards are arranged with Flexbox in dlac.css -->
+        <section class="content-section" aria-labelledby="products-heading">
+            <h2 id="products-heading">Explore Our Loan Products</h2>
+            <div class="loan-cards">
+                <article class="loan-card">
+                    <h3>Personal Loan</h3>
+                    <p class="interest-rate">Illustrative rate: 15% p.a.</p>
+                    <p>Support personal goals such as education, medical needs and home improvements.</p>
+                    <a class="apply-button" href="personal-loan.html">Apply Now</a>
+                </article>
+
+                <article class="loan-card">
+                    <h3>Business Loan</h3>
+                    <p class="interest-rate">Illustrative rate: 16% p.a.</p>
+                    <p>Financing support for business operations, growth and investment.</p>
+                    <a class="apply-button" href="personal-loan.html">Apply Now</a>
+                </article>
+
+                <article class="loan-card">
+                    <h3>Mortgage Loan</h3>
+                    <p class="interest-rate">Illustrative rate: 14% p.a.</p>
+                    <p>Financing designed to help eligible customers purchase or improve property.</p>
+                    <a class="apply-button" href="personal-loan.html">Apply Now</a>
+                </article>
+            </div>
+            <p class="sample-note">Classroom demonstration: rates, maximum amounts and collateral details below are illustrative sample data, not current Stanbic Bank Uganda offers. Actual terms are subject to the bank's assessment.</p>
+        </section>
+
+        <!-- Comparison table with a spanning title row -->
+        <section class="content-section comparison-section" id="comparison" aria-labelledby="comparison-heading">
+            <h2 id="comparison-heading">Loan Comparison</h2>
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th colspan="4">Stanbic Bank Uganda — Loan Products</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Feature</th>
+                            <th scope="col">Personal</th>
+                            <th scope="col">Business</th>
+                            <th scope="col">Mortgage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Interest Rate</th>
+                            <td>15% p.a.</td>
+                            <td>16% p.a.</td>
+                            <td>14% p.a.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Max Amount</th>
+                            <td>UGX 50 million</td>
+                            <td>UGX 500 million</td>
+                            <td>UGX 1 billion</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Collateral Required</th>
+                            <td>May not be required</td>
+                            <td>May be required</td>
+                            <td>Property security</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Stanbic Bank Uganda — Student web design demonstration.</p>
+    </footer>
+</body>
+</html>
